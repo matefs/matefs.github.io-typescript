@@ -8,6 +8,7 @@ import PlansSection from './components/PlansSection';
 import DifferentialsSection from './components/DifferentialsSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
+import PortfolioSection from './components/PortfolioSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <PainSection />
       <SolutionSection />
+      <PortfolioSection />
       <ProofSection />
       <PlansSection />
       <DifferentialsSection />

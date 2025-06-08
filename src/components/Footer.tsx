@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
-              href="https://wa.me/5511999999999?text=Oi%20Mateus!%20Quero%20fazer%20meu%20site%20em%203%20dias"
+              href="https://wa.me/5531976091443?text=Oi, vim pelo site portfolio."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center group text-lg"

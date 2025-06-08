@@ -30,12 +30,6 @@ const Hero: React.FC = () => {
             Chega de enrolação. Sites que geram vendas e presença digital em tempo recorde.
           </p>
 
-          <div className="bg-white rounded-2xl p-6 shadow-lg mb-8 max-w-2xl mx-auto animate-slideInLeft">
-            <p className="text-lg text-gray-700 mb-4">
-              <strong>Sou Mateus</strong>, desenvolvedor web especializado em sites rápidos, bonitos e prontos pra vender — ideal pra quem não pode mais perder tempo no digital.
-            </p>
-          </div>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center break-words">
             <a href="#contato" className="btn-primary group text-lg">
               Quero Meu Site em 3 Dias

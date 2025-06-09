@@ -1,42 +1,55 @@
 import React from 'react';
-import { Check, Zap, Crown, ArrowRight } from 'lucide-react';
+import { Home, Check, Zap, Settings, Crown, ArrowRight } from 'lucide-react';
 
 const PlansSection: React.FC = () => {
   const plans = [
     {
-      name: "Plano Essencial",
-      icon: Zap,
-      price: "Sob consulta",
-      delivery: "até 3 dias úteis",
-      description: "Perfeito para quem precisa sair do zero rapidamente",
+      name: "Landing Page",
+      icon: Home,
+      price: "A partir de R$ 1.500",
+      delivery: "Sob consulta",
+      description: "Página inicial otimizada para capturar visitantes e gerar conversões com uma apresentação clara e objetiva do seu negócio.",
       features: [
-        "Site 100% responsivo",
-        "Página de vendas ou institucional",
-        "Integração com WhatsApp, Insta e Google",
-        "Otimização de velocidade e SEO básico",
-        "Entrega em até 3 dias úteis"
+        "Design responsivo e moderno",
+        "Otimizado para SEO",
+        "Integração com redes sociais",
+        "Área administrativa"
       ],
       popular: false,
-      cta: "Escolher Essencial"
+      cta: "Solicitar Orçamento"
     },
     {
-      name: "Plano Pro",
+      name: "Site Institucional",
       icon: Crown,
-      price: "Sob consulta",
-      delivery: "até 5 dias úteis",
-      description: "Para quem quer o máximo de conversão e automação",
+      price: "A partir de R$ 2.500",
+      delivery: "Sob consulta",
+      description: "Site completo para representar sua empresa de forma profissional e confiável, com informações detalhadas sobre seus serviços e valores.",
       features: [
-        "Tudo do Plano Essencial",
-        "Página de captura com automação",
-        "Copy estratégica incluída",
-        "Hospedagem + domínio inclusos no 1º ano",
-        "Entrega em até 5 dias úteis",
-        "Suporte estendido por 30 dias"
+        "Desenvolvimento customizado",
+        "Funcionalidades específicas",
+        "Integração com APIs",
+        "Suporte técnico incluso"
       ],
       popular: true,
-      cta: "Escolher Pro"
+      cta: "Solicitar Orçamento"
+    },
+    {
+      name: "Sistema Personalizado",
+      icon: Settings,
+      price: "A partir de R$ 5.000",
+      delivery: "Sob consulta",
+      description: "Sistemas web sob medida para otimizar os processos internos da sua empresa, com dashboards e automação de tarefas.",
+      features: [
+        "Dashboard administrativo",
+        "Relatórios e analytics",
+        "Integração com banco de dados",
+        "Escalabilidade garantida"
+      ],
+      popular: false,
+      cta: "Solicitar Orçamento"
     }
   ];
+  
 
   return (
     <section id="servicos" className="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
@@ -50,7 +63,7 @@ const PlansSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <div key={index} className={`card-float p-8 relative ${plan.popular ? 'ring-2 ring-blue-500' : ''}`}>
               {plan.popular && (

@@ -13,21 +13,22 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight animate-fadeInUp">
-            Você Precisa de um{' '}
-            <span>Site Agora</span>
+            Você precisa de um{' '}
+            <span>site agora</span>
           </h1>
           <br />
 
           <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight animate-fadeInUp'>
-            E Eu Entrego em{' '}
+            Eu entrego em{' '}
             <span className="relative">
-              <span >Até 3 Dias</span>
+              <span >até 3 dias</span>
               <div className="absolute -bottom-2 left-0 right-0 h-3 bg-orange-500/20 -rotate-1"></div>
             </span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fadeInUp">
-            Chega de enrolação. Sites que geram vendas e presença digital em tempo recorde.
+          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fadeInUp">
+
+            Pare de perder tempo. Conquiste vendas e <br/> visibilidade online rapidamente.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center break-words">

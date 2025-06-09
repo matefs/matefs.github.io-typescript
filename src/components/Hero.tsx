@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center break-words">
-            <a href="#contato" className="btn-primary group text-lg">
+            <a href="#contato" className="btn-primary group text-lg flex items-center">
               Quero Meu Site em 3 Dias
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>

@@ -21,7 +21,10 @@ const PortfolioSection: React.FC = () => {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-12">Portfólio de Sites</h2>
+        <h2 className="text-4xl font-bold text-center mb-4">Alguns projetos já entregues</h2>
+        <p className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+          Landing pages, páginas de vendas e sites institucionais criados com foco em resultado.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Site de Tráfego Pago */}
           <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer"

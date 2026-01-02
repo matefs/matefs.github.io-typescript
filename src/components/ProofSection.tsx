@@ -6,23 +6,23 @@ const ProofSection: React.FC = () => {
     {
       name: "Juliana S.",
       role: "Empreendedora",
-      text: "O Mateus me entregou o site em dois dias! Além de lindo, aumentou meus contatos pelo WhatsApp já na primeira semana.",
+      text: "Recebi contatos no WhatsApp na primeira semana.",
       rating: 5,
-      highlight: "Aumento de contatos em 1 semana"
+      highlight: "Mais contatos no WhatsApp"
     },
     {
       name: "Leandro V.",
       role: "Consultor",
-      text: "Simplesmente sensacional. O site ficou profissional e me economizou tempo e dor de cabeça. Vale cada centavo.",
+      text: "Economizou meu tempo e entregou rápido.",
       rating: 5,
-      highlight: "Economizou tempo e dinheiro"
+      highlight: "Entrega rápida"
     },
     {
       name: "Carla M.",
       role: "Loja Online",
-      text: "Finalmente um desenvolvedor que entende de prazo! Site entregue no tempo prometido e com qualidade excepcional.",
+      text: "Cumpriu o prazo e entregou qualidade.",
       rating: 5,
-      highlight: "Prazo cumprido com qualidade"
+      highlight: "Prazo cumprido"
     }
   ];
 
@@ -37,7 +37,7 @@ const ProofSection: React.FC = () => {
             O que meus clientes dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Resultados reais de pessoas que confiaram no meu trabalho
+            Depoimentos reais de quem já colocou o site pra vender.
           </p>
         </div>
 
@@ -64,15 +64,15 @@ const ProofSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-blue-500 to-blue-900 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">
             Próximo depoimento pode ser o seu!
           </h3>
           <p className="text-lg mb-6 opacity-90">
             Junte-se aos empreendedores que já estão vendendo online
           </p>
-          <a href="#contato" className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block">
-            Quero Fazer Parte
+          <a href="#contato" className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block uppercase tracking-tight">
+            QUERO MEU SITE EM 3 DIAS
           </a>
         </div>
       </div>

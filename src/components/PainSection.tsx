@@ -5,23 +5,23 @@ const PainSection: React.FC = () => {
   const painPoints = [
     {
       icon: Search,
-      title: "Não sabe por onde começar",
-      description: "Tantas opções e informações que fica confuso"
+      title: "Travado e confuso",
+      description: "Quer um site, mas não sabe por onde começar — e acaba não fazendo nada."
     },
     {
       icon: Clock,
-      title: "Já tentou fazer sozinho e perdeu horas",
-      description: "Tempo precioso que poderia estar vendendo"
+      title: "Tentou fazer sozinho",
+      description: "Perdeu tempo, se estressou e não vendeu porra nenhuma."
     },
     {
       icon: DollarSign,
-      title: "Recebeu orçamentos absurdos de agências",
-      description: "Preços que não cabem no seu orçamento"
+      title: "Agência meteu a faca",
+      description: "Orçamento absurdo pra entregar site lento e cheio de enrolação."
     },
     {
       icon: TrendingDown,
-      title: "Está perdendo clientes",
-      description: "Sem presença digital, perde oportunidades diariamente"
+      title: "Perdendo clientes diariamente",
+      description: "Enquanto você não aparece online, seu concorrente tá fechando no WhatsApp."
     }
   ];
 
@@ -30,10 +30,10 @@ const PainSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Você sabe que precisa de um site, mas...
+            Você passa por alguma dessas situações?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Reconhece alguma dessas situações? Você não está sozinho.
+            Se isso aqui parece com você, seu negócio tá sangrando dinheiro todos os dias:
           </p>
         </div>
 
@@ -54,14 +54,14 @@ const PainSection: React.FC = () => {
             <AlertTriangle className="h-12 w-12" />
           </div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Enquanto isso, seus concorrentes já estão vendendo online
+            Enquanto você enrola, seu concorrente já está vendendo online.
           </h3>
           <p className="text-lg mb-4 opacity-90">
-            Aparecendo no Google e capturando os seus potenciais clientes.
+            Seu negócio está invisível. E cada dia sem site é dinheiro que você deixa na mesa.
           </p>
           <div className="bg-white/20 rounded-lg p-4 max-w-2xl mx-auto">
             <p className="text-xl font-semibold">
-              Seu negócio está invisível — e cada dia sem site é uma venda que você deixa de fechar.
+              Cliente não espera. Ele clica no próximo que aparece.
             </p>
           </div>
         </div>

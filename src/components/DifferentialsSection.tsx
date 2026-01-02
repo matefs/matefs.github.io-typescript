@@ -40,7 +40,7 @@ const DifferentialsSection: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {differentials.map((differential, index) => (
             <div key={index} className="text-center group">
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <differential.icon className="h-10 w-10 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -53,13 +53,12 @@ const DifferentialsSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-8 text-white text-center">
+        <div className="mt-16 bg-gradient-to-r from-blue-500 to-blue-900 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">
-            Resultado Garantido ou Seu Dinheiro de Volta
+            Risco zero pra você
           </h3>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Tenho tanta confiança no meu trabalho que ofereço garantia total. 
-            Se não ficar satisfeito, devolvemos 100% do seu investimento.
+            Se o site não for entregue conforme o briefing, devolvo 100% do seu dinheiro. Sem conversa fiada.
           </p>
         </div>
       </div>

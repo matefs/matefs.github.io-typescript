@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Section */}
-      <section id="contato" className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
+      <section id="contato" className="bg-gradient-to-r from-blue-600 to-blue-900 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <CheckCircle className="h-12 w-12 text-green-400" />
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             Seu negócio não pode esperar
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Clique agora, fale direto comigo e receba um orçamento personalizado
+            Cada dia sem site é cliente perdido. Clique agora e fale direto comigo.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-6 md:mb-0">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-900 p-2 rounded-lg">
                 <Code2 className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold">Mateus Dev</span>

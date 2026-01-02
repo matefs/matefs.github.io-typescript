@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-900 p-2 rounded-lg">
               <Code2 className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold text-gray-900">Mateus Sites</span>
@@ -29,8 +29,8 @@ const Header: React.FC = () => {
             <a href="#faq" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
               FAQ
             </a>
-            <a href="#contato" className="btn-primary">
-              Fale Comigo
+            <a href="#contato" className="btn-primary uppercase tracking-tight">
+              QUERO MEU SITE EM 3 DIAS
             </a>
           </nav>
           
@@ -55,8 +55,8 @@ const Header: React.FC = () => {
             <a href="#faq" className="text-gray-600 hover:text-blue-600 font-medium transition-colors" onClick={toggleMobileMenu}>
               FAQ
             </a>
-            <a href="#contato" className="btn-primary" onClick={toggleMobileMenu}>
-              Fale Comigo
+            <a href="#contato" className="btn-primary uppercase tracking-tight" onClick={toggleMobileMenu}>
+              QUERO MEU SITE EM 3 DIAS
             </a>
           </nav>
         </div>

@@ -7,43 +7,40 @@ const PlansSection: React.FC = () => {
       name: "Landing Page",
       icon: Home,
       price: "A partir de R$ 1.500",
-      delivery: "Sob consulta",
-      description: "Página inicial otimizada para capturar visitantes e gerar conversões com uma apresentação clara e objetiva do seu negócio.",
+      delivery: "até 3 dias úteis",
+      description: "Landing page focada em conversão, pronta para captar contatos no WhatsApp.",
       features: [
-        "Design responsivo e moderno",
-        "Otimizado para SEO",
-        "Integração com redes sociais",
-        "Área administrativa"
+        "Página focada em conversão",
+        "Responsivo",
+        "WhatsApp + SEO básico"
       ],
       popular: false,
-      cta: "Solicitar Orçamento"
+      cta: "MEU SITE EM 3 DIAS"
     },
     {
       name: "Site Institucional",
       icon: Crown,
       price: "A partir de R$ 2.500",
-      delivery: "Sob consulta",
-      description: "Site completo para representar sua empresa de forma profissional e confiável, com informações detalhadas sobre seus serviços e valores.",
+      delivery: "prazo combinado",
+      description: "Site completo para apresentar sua empresa com autoridade.",
       features: [
-        "Desenvolvimento customizado",
-        "Funcionalidades específicas",
-        "Integração com APIs",
-        "Suporte técnico incluso"
+        "Múltiplas páginas",
+        "Estrutura profissional",
+        "Prazo combinado"
       ],
       popular: true,
-      cta: "Solicitar Orçamento"
+      cta: "MEU SITE EM 3 DIAS"
     },
     {
       name: "Sistema Personalizado",
       icon: Settings,
       price: "A partir de R$ 5.000",
-      delivery: "Sob consulta",
-      description: "Sistemas web sob medida para otimizar os processos internos da sua empresa, com dashboards e automação de tarefas.",
+      delivery: "prazo combinado",
+      description: "Sistemas e automações sob medida para seu negócio.",
       features: [
-        "Dashboard administrativo",
-        "Relatórios e analytics",
-        "Integração com banco de dados",
-        "Escalabilidade garantida"
+        "Desenvolvimento sob medida",
+        "Dashboards e automação",
+        "Integrações personalizadas"
       ],
       popular: false,
       cta: "Solicitar Orçamento"
@@ -56,10 +53,10 @@ const PlansSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Oferta Irresistível
+            Escolha o plano ideal para o seu negócio
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Escolha o plano que mais se adequa ao seu negócio
+            Planos claros, prazos definidos e foco em resultado.
           </p>
         </div>
 
@@ -68,7 +65,7 @@ const PlansSection: React.FC = () => {
             <div key={index} className={`card-float p-8 relative ${plan.popular ? 'ring-2 ring-blue-500' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="bg-gradient-to-r from-blue-500 to-blue-900 text-white px-4 py-2 rounded-full text-sm font-semibold">
                     Mais Popular
                   </div>
                 </div>
@@ -77,7 +74,7 @@ const PlansSection: React.FC = () => {
               <div className="text-center mb-6">
                 <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${
                   plan.popular 
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-500' 
+                    ? 'bg-gradient-to-r from-blue-500 to-blue-900' 
                     : 'bg-gray-100'
                 }`}>
                   <plan.icon className={`h-8 w-8 ${plan.popular ? 'text-white' : 'text-gray-600'}`} />
@@ -101,7 +98,7 @@ const PlansSection: React.FC = () => {
                 href="#contato" 
                 className={`w-full text-center py-4 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group ${
                   plan.popular
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl'
+                    ? 'bg-gradient-to-r from-blue-600 to-blue-900 hover:from-blue-700 hover:to-blue-950 text-white shadow-lg hover:shadow-xl'
                     : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
                 }`}
               >

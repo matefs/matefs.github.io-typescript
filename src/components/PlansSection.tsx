@@ -2,11 +2,12 @@ import React from 'react';
 import { Home, Check, Zap, Settings, Crown, ArrowRight } from 'lucide-react';
 
 const PlansSection: React.FC = () => {
+  const installmentCount = 10;
   const plans = [
     {
       name: "Landing Page",
       icon: Home,
-      price: "A partir de R$ 1.500",
+      price: 1500,
       delivery: "até 3 dias úteis",
       description: "Landing page focada em conversão, pronta para captar contatos no WhatsApp.",
       features: [
@@ -20,7 +21,7 @@ const PlansSection: React.FC = () => {
     {
       name: "Site Institucional",
       icon: Crown,
-      price: "A partir de R$ 2.500",
+      price: 2500,
       delivery: "prazo combinado",
       description: "Site completo para apresentar sua empresa com autoridade.",
       features: [
@@ -34,7 +35,7 @@ const PlansSection: React.FC = () => {
     {
       name: "Sistema Personalizado",
       icon: Settings,
-      price: "A partir de R$ 5.000",
+      price: 5000,
       delivery: "prazo combinado",
       description: "Sistemas e automações sob medida para seu negócio.",
       features: [
@@ -43,9 +44,13 @@ const PlansSection: React.FC = () => {
         "Integrações personalizadas"
       ],
       popular: false,
+      startingFrom: true,
       cta: "Solicitar Orçamento"
     }
   ];
+
+  const formatCurrency = (value: number) =>
+    value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 0 });
   
 
   return (
@@ -81,7 +86,14 @@ const PlansSection: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                 <p className="text-gray-600 mb-4">{plan.description}</p>
-                <div className="text-3xl font-bold text-gray-900 mb-1">{plan.price}</div>
+                <div className="text-center mb-1">
+                  {plan.startingFrom && (
+                    <span className="text-[11px] uppercase tracking-wide text-gray-500 block">A partir de</span>
+                  )}
+                  <span className="text-xs uppercase tracking-wide text-gray-500 block">{installmentCount}x de</span>
+                  <span className="text-3xl font-extrabold text-gray-900 leading-tight">{formatCurrency(plan.price / installmentCount)}</span>
+                  <span className="text-sm text-gray-600 block">ou {formatCurrency(plan.price)} à vista</span>
+                </div>
                 <div className="text-sm text-gray-600">Entrega em {plan.delivery}</div>
               </div>
 
